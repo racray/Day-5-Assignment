@@ -3,10 +3,9 @@
     var aux =[];
     var a = [5,2,1,3,5,6,7,8,9,4,4];
     for (let i = 0; i < k; i++) {
-            aux[i] = a[11+i-k];
-        // 11 is size of a
+            aux[i] = a[a.length+i-k];
     }
-    for(i=11-1-k;i>=0;i--){
+    for(i=a.length-1-k;i>=0;i--){
         a[i+k] = a[i]
     }
     for(i=0;i<k;i++){
